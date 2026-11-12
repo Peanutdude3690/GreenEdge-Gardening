@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenEdge Gardening | Melbourne</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Arial, sans-serif;
+  color: #26352b;
+  background: #f7f9f5;
+  line-height: 1.6;
+}
+header {
+  background: #173e2b;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.logo { font-size: 25px; font-weight: bold; }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.hero {
+  min-height: 470px;
+  padding: 100px 8%;
+  color: white;
+  background: linear-gradient(90deg, #102c20dd, #102c2055),
+  url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600')
+  center/cover;
+}
+.hero h1 { font-size: clamp(38px, 6vw, 62px); max-width: 650px; }
+.hero p { margin: 20px 0; font-size: 19px; }
+.btn {
+  display: inline-block;
+  background: #8bc34a;
+  color: #173e2b;
+  padding: 13px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+section { padding: 65px 8%; }
+.heading { text-align: center; margin-bottom: 35px; }
+.heading h2 { font-size: 34px; color: #173e2b; }
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 22px;
+}
+.card {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px #0000000c;
+}
+.card .emoji { font-size: 35px; }
+.card h3 { margin: 12px 0; color: #245c38; }
+.pricing { background: #eaf1e6; }
+.price { font-size: 27px; color: #347a3e; font-weight: bold; }
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 35px;
+  align-items: center;
+}
+.about img { width: 100%; border-radius: 12px; }
+.contact {
+  background: #173e2b;
+  color: white;
+  text-align: center;
+}
+.contact h2 { font-size: 36px; margin-bottom: 15px; }
+.contact .btn { margin-top: 20px; }
+footer {
+  background: #102c20;
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+@media(max-width:600px) {
+  nav a { margin-left: 8px; font-size: 14px; }
+  .hero { padding: 75px 7%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🌿 GreenEdge Gardening</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#prices">Prices</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Your Garden, Our Passion.</h1>
+  <p>Reliable, affordable gardening services across Melbourne.</p>
+  <a class="btn" href="#contact">Get a Free Quote</a>
+</div>
+
+<section id="services">
+  <div class="heading">
+    <h2>Our Gardening Services</h2>
+    <p>Everything your garden needs to look its best.</p>
+  </div>
+  <div class="services">
+    <div class="card">
+      <div class="emoji">🌱</div>
+      <h3>Lawn Mowing</h3>
+      <p>Professional lawn mowing, edging and tidy-ups to keep your lawn looking fresh.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🌳</div>
+      <h3>Hedge Trimming</h3>
+      <p>Neat hedge shaping and trimming to keep your garden looking organised.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🍃</div>
+      <h3>Garden Clean-ups</h3>
+      <p>Leaf removal, general garden tidying and seasonal clean-ups.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🌻</div>
+      <h3>Weeding</h3>
+      <p>Removing unwanted weeds and helping your garden stay healthy.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🚛</div>
+      <h3>Green Waste Removal</h3>
+      <p>Removal of garden clippings, leaves and green waste.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🌿</div>
+      <h3>Regular Maintenance</h3>
+      <p>Weekly, fortnightly or monthly garden maintenance plans.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="prices">
+  <div class="heading">
+    <h2>Our Starting Prices</h2>
+    <p>Affordable gardening without compromising quality.</p>
+  </div>
+  <div class="services">
+    <div class="card">
+      <h3>Lawn Mowing</h3>
+      <p class="price">From $45</p>
+      <p>Depending on lawn size.</p>
+    </div>
+    <div class="card">
+      <h3>Hedge Trimming</h3>
+      <p class="price">From $50</p>
+      <p>Depending on hedge size.</p>
+    </div>
+    <div class="card">
+      <h3>Garden Clean-up</h3>
+      <p class="price">From $80</p>
+      <p>Depending on garden condition.</p>
+    </div>
+  </div>
+  <p style="text-align:center;margin-top:25px">
+    All prices are estimates. Call for an accurate quote.
+  </p>
+</section>
+
+<section id="about">
+  <div class="about">
+    <div>
+      <h2>About GreenEdge Gardening</h2>
+      <p style="margin-top:15px">
+        At GreenEdge Gardening, we believe every garden deserves
+        to look its best. We provide friendly, reliable and
+        affordable gardening services throughout Melbourne.
+      </p>
+      <p style="margin-top:15px">
+        Whether you need a quick lawn mow or a complete garden
+        tidy-up, we're here to help.
+      </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=900"
+         alt="Beautiful maintained garden">
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Ready for a Beautiful Garden?</h2>
+  <p>Give us a call today to discuss your gardening needs
+     and organise a free quote.</p>
+  <a class="btn" href="tel:0400123456">📞 Call 0400 123 456</a>
+  <p style="margin-top:25px">📍 Melbourne, Victoria</p>
+  <p>✉️ info@greenedgegardening.example</p>
+  <p>Monday – Saturday: 7:00am – 5:00pm</p>
+</section>
+
+<footer>
+  <p>© 2026 GreenEdge Gardening. All rights reserved.</p>
+  <p>Professional Gardening Services | Melbourne VIC</p>
+</footer>
+
+</body>
+</html>
